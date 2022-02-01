@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            background: #333;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content:space-evenly;
+            align-items:center;
+            min-height: 100vh;
+        }
+        header{
+            padding: 20px 60px;
+            background: rgba(0,0,0,0.7);
+            border-radius: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            box-shadow: 15px 50px 5px rgba(0,0,0,0.2),
+            -15px -15px 5px rgba(0,0,0,0.3);
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            height: 50vh;
+            position: relative;
+            justify-content: center;
+            align-items: flex-end;
+
+        }
+        header img{
+            width: 100px;
+            aspect-ratio: 1;
+            position: absolute;
+            margin: 10px auto;
+            border-radius: 50%;
+            top: -50px;
+            left: 50%;
+            transform: translate(-50%);
+            border: 5px solid rgba(0,0,0,0.7);
+            border-bottom: none;
+            box-shadow: 0 -10px 5px rgba(0,0,0,0.3);
+        }
+        form{
+            height: 450px;
+            max-width: 90%;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 1.4em;
+            padding: 10px 40px;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,0.4);
+            margin: auto;
+            position: relative;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.281);
+            box-shadow: -10px -10px 10px rgba(255,255,255,0.2),
+            10px 10px 10px rgba(0,0,0,0.4);
+        }
+        fieldset{
+            width: 90%;
+            border: 2px solid white;
+            border-radius: 10px;
+            /* padding: 10px; */
+            height: fit-content;
+            position: relative;
+        }
+        legend{
+            color: #777;
+            font-weight: 800;
+            margin-left: 10px;
+            padding: 0 5px;
+            transition: all 0.5s;
+        }
+        
+        .inputs:focus ~ legend{
+            transform: translate(0,-5px);
+            color: #fff;
+            letter-spacing: 3px;
+        }
+        .strings{
+            background: none;
+            border: none;
+            height: 40px;
+            width: 100% !important;
+            border-radius: 20px;
+            padding: 5px 10px;
+            outline: none;
+            color: #ccc;
+        }
+        #answer{
+            display: grid;
+            place-items: center;
+            
+        }
+        button{
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid white;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="aayush.jpeg" alt="Aayush Yash">
+        <div>Name: Aayush Yash</div>
+        <div>Roll: BCA/40531/20</div>
+        <div>Subject: WP lab</div>
+        <div>Semester: 4</div>
+    </header>
+    <section>
+        <form>
+            <fieldset>
+                <input type="text" name="" id="string1" class="strings inputs">
+                <legend>String 1</legend>
+            </fieldset>
+            <fieldset>
+                <input type="text" name="" id="string2" class="strings inputs">
+                <legend>String 2</legend>
+            </fieldset>
+            <fieldset>
+                <input type="text" name="" id="string3" class="strings inputs">
+                <legend>String 3</legend>
+            </fieldset>
+            <div>
+                <button type="submit" id="btn">Click Me!✅</button>
+                <button type="reset" id="reset">Reset 🔄</button>
+            </div>
+            <fieldset>
+                <legend id="ansLegend">String After Concatenation</legend>
+                <div id="answer" class="strings"></div>
+            </fieldset>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
