@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 20px;
+}
+header{
+    width: calc(100% - 120px);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100px;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+    font-size: 1.24em;
+    font-weight: 600;
+    padding: 5px 50px;
+    color: #e6d5b8;
+    background: rgba(0,0,0,0.6);
+    border-radius: 20px;
+    overflow: hidden;
+}
+header div{
+    border: 1px solid #e6d5b8;
+    padding: 0 20px;
+    border-top: none;
+    border-bottom: none;
+
+}
+
+img{
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    clear: both;
+    float: right;
+    margin: 5px;
+}
+
+section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    justify-content: center;
+    align-items: center;
+    
+}
+.title{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 15px;
+    border-bottom: 1px solid#fff;
+}
+.body{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.division{
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.division:nth-child(1){
+    background: #11999e;
+    color: #e4f9f5;
+}
+.division:nth-child(2){
+    background: #866ec7;
+    color: #b7fbff;
+}
+.division:nth-child(3){
+    background: #ffbc65;
+    color: #eeeeee;
+}
+.division:nth-child(4){
+    background: #ac4c5e;
+    color: #e5d549;
+}
+.division:nth-child(5){
+    background: #5c476f;
+    color: #f8f1f1;
+}
+.division:nth-child(6){
+    background: #0a065d;
+    color: #a3816a;
+}
+.division:nth-child(7){
+    background: #f89d13;
+    color: #e6dedd;
+}
+.division:nth-child(8){
+    background: #8f1d14;
+    color: #91d18b;
+}
+.division:nth-child(9){
+    background: #524c84;
+    color: #fff9af;
+}
+.division:nth-child(10){
+    background: #00bd56;
+    color: #f9fd50;
+}
+
